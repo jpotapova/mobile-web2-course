@@ -1,0 +1,333 @@
+* {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+*::-moz-selection {
+	color: white;
+	background: #F78F1E;
+}
+*::selection {
+	color: white;
+	background: #F78F1E;
+}
+
+body {
+	font-family: 'Open Sans', Arial, sans-serif;
+	margin: 0;
+	color: #08747F;
+	background: #789A9F;
+}
+
+h1 {
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 1.75em;
+	line-height: 2.6em;
+	font-weight: normal;
+	vertical-align: middle;
+	margin: 0;
+	text-align: center;
+	background: #789A9F;
+	color: #FFFFFF;
+	border-bottom: 1px solid #496669;
+	text-transform: uppercase;
+	position: relative;
+}
+
+h1 a {
+	position: absolute;
+	right: 3%;
+	text-decoration: none;
+	color: #FFFFFF;
+  text-transform: none;
+  top: 0;
+}
+
+h1 a i {
+	font-size: 1em;
+}
+
+h1 a span {
+	font-size: 0.6em;
+	vertical-align: middle;
+}
+
+h2 {
+	font-family: 'PT Sans', Arial, sans-serif;
+	text-align: center;
+	font-size: 1.2em;
+	color: #FFFFFF;
+	font-weight: normal;
+	line-height: 1.2em;
+	vertical-align: middle;
+	padding: 1em 3%;
+	margin: 0;
+	cursor: pointer;
+}
+
+section {
+	border-bottom: 1px solid #A5BCC0;
+}
+
+.no-entries {
+	border-bottom: none;
+}
+
+article {
+	border-bottom: 1px solid #496669;
+	border-top: 1px solid #A5BCC0;
+	margin: 0;
+	position: relative;
+}
+
+form {
+	background: #F5FAFA;
+	padding: 0 3%;
+	height: 0;
+	overflow: hidden;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+
+label {
+	display: block;
+    width: 100%;
+}
+label span {
+    display: none;
+    float: right;
+}
+.error label span {
+    color: #F78F1E;
+    display: block;
+}
+
+input {
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: #08747F;
+	font-size: 1em;
+	border: 1px solid #08747F;
+	line-height: 1.5em;
+	width: 100%;
+	padding: 1% 2%;
+	color: #496669;
+	margin-bottom: 1em;
+}
+
+input:focus {
+    border: 1px solid #08747F;
+	
+}
+
+.error input {
+    border: 1px solid #F78F1E;
+}
+
+.error input:focus {
+    border: 1px solid #F78F1E;
+}
+
+textarea {
+	font-family: 'Open Sans', Arial, sans-serif;
+	color: #08747F;
+	border: 1px solid #08747F;
+	line-height: 1.5em;
+	width: 100%;
+	padding: 1% 2%;
+	color: #496669;
+	margin-bottom: 1em;
+	height: 12em;
+}
+
+
+.error textarea {
+    border: 1px solid #F78F1E;
+}
+
+p {
+	text-align: justify;
+	padding: 0 3%;
+	line-height: 1.5em;
+	margin: 0;
+	overflow: hidden;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+article h2 .actions {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 3.55em;
+	background: #F5FAFA;
+	color: #08747F;
+	width: 0;
+	overflow: hidden;
+	padding: 1em 0;
+	z-index: 2;
+}
+
+.active h2 .actions {
+	top: auto;
+	bottom: 0;
+}
+
+article h2 .actions.active  {
+	width: auto;
+	padding: 1em 3%;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+article h2 .actions i {
+	margin-right: 0.3em;
+}
+
+article h2 .show-actions {
+	position: absolute;
+	top: 0.9em;
+	right: 3%;
+	font-size: 1.2em;
+	vertical-align: middle;
+}
+
+.active h2 .show-actions {
+	position: absolute;
+	bottom: 0.5em;
+	top: auto;
+	color: #08747F;
+	z-index: 1;
+}
+
+
+.delete-entry {
+	margin-left: 1em;
+}
+
+article p {
+	height: 0;
+	background: #F5FAFA;
+	-webkit-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.active p {
+	display: block;
+	height: auto;
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.actions {
+	text-align: right;
+	font-size: 0.9em;
+}
+
+.actions a {
+	text-decoration: none;
+	color: #08747F;
+	font-size: 1.9em;
+	margin-left: 0.8em;
+}
+
+.actions a i {
+	margin-right: 0.2em;
+}
+.actions a span {
+	font-size: 0.6em;
+	vertical-align: middle;
+}
+
+form p {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.edit #entry {
+	padding: 1em 3%;
+	height: auto;
+}
+
+.edit section {
+	opacity: 0.4;
+}
+
+.edit h1 {
+	opacity: 0.4;
+}
+
+.delete #confirmation {
+	padding: 1em 3%;
+	height: auto;
+}
+
+.delete section {
+	opacity: 0.4;
+}
+
+.delete h1 {
+	opacity: 0.4;
+}
+
+.loading {
+	border-bottom: none;
+}
+
+.loading #spinner {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#no-entries-info {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#spinner {
+	margin-top: 1em;
+}
+
+#spinner i {
+	font-size: 1.5em;
+    margin-right: 1em;
+}
+
+#no-entries-info {
+	margin-top: 1.5em;
+}
+
+#confirmation .actions {
+    text-align: center;
+}
+
+/* to make text more pleasant to read on larger-width devices as well */
+
+@media all and (min-width : 769px) {
+
+	p {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}
+
+@media all and (min-width : 1024px) {
+
+	p {
+		padding-left: 30%;
+		padding-right: 30%;
+	}
+}

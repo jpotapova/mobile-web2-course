@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' lang='en'>
+  <head>
+    <meta charset='utf-8'/>
+	<meta name="viewport" content="width=device-width">
+    <title>Assignment 3 part 1</title>
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+    <h1>My Diary Entries<a href="#" title="Add new entry" id="add"><i class="fa fa-pencil-square-o"></i><span>New</span></a></h1>
+    <form action="#" id="confirmation">
+        <p>Are you sure you want to delete this entry?</p>
+        <div class="actions">
+            <a href="#" title="No, cancel" id="no"><i class="fa fa-times"></i><span>No, cancel</span></a>
+            <a href="#" title="Yes, delete" id="yes"><i class="fa fa-check"></i><span>Yes, delete</span></a>
+        </div>
+    </form>
+    <form action="#" id="entry">
+        <p>New entry</p>
+        <div class="row">
+            <label for="title">Title<span>Please enter title</span></label>
+            <input type="text" name="title" id="title">
+        </div>
+        <div class="row">
+            <label for="content">Content<span>Please enter content</span></label>
+            <textarea id="content" name="content"></textarea>
+        
+        </div>
+        <div class="actions">
+            <a href="#" title="Discard" id="discard"><i class="fa fa-times"></i><span>Discard</span></a>
+            <a href="#" title="Save" id="save"><i class="fa fa-check"></i><span>Save</span></a>
+        </div>
+    </form>
+    <section class='entries loading'>
+        <p id="spinner"><i class="fa fa-circle-o-notch fa-spin"></i>Loading...</p>
+        
+    </section>
+	<script src='js/main.js'></script>
+  </body>
+</html>
